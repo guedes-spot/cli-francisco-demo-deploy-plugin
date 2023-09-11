@@ -1,0 +1,43 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: francisco-app-spec-file-00
+  description: Descrição
+  starter: studio-francisco/test-spec-file@0.0.1/starter-spec
+  stack-version-id: 01HA25GKKTEQWWT7CAJHR07ZP5
+  stack: test-spec-file@0.0.1
+spec:
+  type: app
+  app-id: 01HA2ZF09CH9FAXMPHD99ERD40
+  plugins:
+    - name: studio-francisco/test-spec-file@0.0.1/plugin-test-andre-starter-00@0.0.1
+      alias: plugin-test-andre-starter-00
+      plugin-version-id: 01HA25EGVD6D42H43RZXJ8FNFM
+      stack-version-id: 01HA25GKKTEQWWT7CAJHR07ZP5
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-francisco/test-spec-file@0.0.1/plugin-test-andre-starter-01@0.0.1
+      alias: plugin-test-andre-starter-01
+      plugin-version-id: 01HA25F2WANPKJQ9CBNRBYYP4C
+      stack-version-id: 01HA25GKKTEQWWT7CAJHR07ZP5
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/cli-francisco-demo-deploy-plugin
