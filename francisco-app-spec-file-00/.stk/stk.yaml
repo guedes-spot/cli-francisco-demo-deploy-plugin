@@ -8,6 +8,7 @@ metadata:
   stack: test-spec-file@0.0.1
 spec:
   type: app
+  app-id: 01HA2ZF09CH9FAXMPHD99ERD40
   plugins:
     - name: studio-francisco/test-spec-file@0.0.1/plugin-test-andre-starter-00@0.0.1
       alias: plugin-test-andre-starter-00
