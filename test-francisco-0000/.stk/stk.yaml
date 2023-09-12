@@ -8,6 +8,7 @@ metadata:
   stack: new-stack@0.2.1
 spec:
   type: app
+  app-id: 01HA56YSGCD9338XVQ12NB5MYA
   plugins:
     - name: new-cli-studio/new-stack@0.2.1/plugin-basic-01@0.0.1
       alias: plugin-basic-01
