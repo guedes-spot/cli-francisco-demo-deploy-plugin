@@ -8,6 +8,7 @@ metadata:
   stack: new-stack@0.2.0
 spec:
   type: app
+  app-id: 01HA5B14DRCVHBE9NSNQFY4FTB
   plugins:
     - name: new-cli-studio/new-stack@0.2.0/demo-flavia@0.0.1
       alias: demo-flavia
