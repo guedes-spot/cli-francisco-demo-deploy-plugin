@@ -1,0 +1,44 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: test-francisco-0000
+  description: Description test-francisco-0000
+  starter: new-cli-studio/new-stack@0.2.1/test-starter
+  stack-version-id: 01HA56TMPKWFP0A03A830HCTAV
+  stack: new-stack@0.2.1
+spec:
+  type: app
+  plugins:
+    - name: new-cli-studio/new-stack@0.2.1/plugin-basic-01@0.0.1
+      alias: plugin-basic-01
+      plugin-version-id: 01H55GEXYQDT0C9REVNWGZP0BQ
+      stack-version-id: 01HA56TMPKWFP0A03A830HCTAV
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: new-cli-studio/new-stack@0.2.1/flask-plugin@0.0.5
+      alias: flask-plugin
+      plugin-version-id: 01GYFFCHTDY3DJ2TM3NNP2G8XV
+      stack-version-id: 01HA56TMPKWFP0A03A830HCTAV
+      type: app
+      inputs:
+        hello_message: Hello World!
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-eks-conn
+            selected: test-eks
+            alias: aws-eks-conn
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/cli-francisco-demo-deploy-plugin
