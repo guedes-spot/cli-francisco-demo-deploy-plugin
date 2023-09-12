@@ -1,0 +1,99 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-francisco-10001
+  description: Description app-francisco-10001
+  starter: new-cli-studio/new-stack@0.2.0/test-starter
+  stack-version-id: 01HA3GZWN56EB228EP0K36G3AE
+  stack: new-stack@0.2.0
+spec:
+  type: app
+  app-id: 01HA5B14DRCVHBE9NSNQFY4FTB
+  plugins:
+    - name: new-cli-studio/new-stack@0.2.0/demo-flavia@0.0.1
+      alias: demo-flavia
+      plugin-version-id: 01H5JETY9XMPNMVVPZ5KV5JABE
+      stack-version-id: 01HA3GZWN56EB228EP0K36G3AE
+      type: app
+      inputs:
+        resource: Client
+        name: Client
+        colors: Blue
+      inputs-envs:
+        inputEnv:
+          aaa: Client
+          azure_rt: Client
+          clienvstaging: Client
+          demo_qa2: Client
+          demo10env: Client
+          desenvolvimento3333: Client
+          dev: Client
+          envqaeventbus1: Client
+          envqaeventbus2: Client
+          envqaeventbus3: Client
+          envqaeventbus4: Client
+          envqaeventbus5: Client
+          envqaeventbus6: Client
+          envqaeventbus7: Client
+          envqaeventbus8: Client
+          environmentqadg01: Client
+          mineenvironment: Client
+          new: Client
+          prd: Client
+          qastaging: Client
+          sandbox: Client
+          sandbox_dem: Client
+          sandbox_p: Client
+          sandbox_terere: Client
+          smoke_env1: Client
+          smoke3_env: Client
+          test_five_ok: Client
+          test_four_ok_ok_ok: Client
+          test_three_ok_ok: Client
+          test_two_ok: Client
+          testedeacessibilidade: Client
+          testing: Client
+          testone_ok_ok: Client
+          tetete: Client
+          zupteste: Client
+      connections:
+        generates: []
+        requires:
+          - type: aws-rds-conn
+            selected: teste-conn-11
+            alias: aws-rds-conn
+      links:
+        generates: []
+    - name: new-cli-studio/new-stack@0.2.0/plugin-basic-01@0.0.1
+      alias: plugin-basic-01
+      plugin-version-id: 01H55GEXYQDT0C9REVNWGZP0BQ
+      stack-version-id: 01HA3GZWN56EB228EP0K36G3AE
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: new-cli-studio/new-stack@0.2.0/flask-plugin@0.0.5
+      alias: flask-plugin
+      plugin-version-id: 01GYFFCHTDY3DJ2TM3NNP2G8XV
+      stack-version-id: 01HA3GZWN56EB228EP0K36G3AE
+      type: app
+      inputs:
+        hello_message: Hello World!
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-eks-conn
+            selected: test-eks
+            alias: aws-eks-conn
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/cli-francisco-demo-deploy-plugin

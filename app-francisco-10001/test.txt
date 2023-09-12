@@ -1,0 +1,4 @@
+O meu resource é Client
+Seu nome é Client
+Blue
+Input Env: {'aaa': 'Client', 'azure_rt': 'Client', 'clienvstaging': 'Client', 'demo_qa2': 'Client', 'demo10env': 'Client', 'desenvolvimento3333': 'Client', 'dev': 'Client', 'envqaeventbus1': 'Client', 'envqaeventbus2': 'Client', 'envqaeventbus3': 'Client', 'envqaeventbus4': 'Client', 'envqaeventbus5': 'Client', 'envqaeventbus6': 'Client', 'envqaeventbus7': 'Client', 'envqaeventbus8': 'Client', 'environmentqadg01': 'Client', 'mineenvironment': 'Client', 'new': 'Client', 'prd': 'Client', 'qastaging': 'Client', 'sandbox': 'Client', 'sandbox_dem': 'Client', 'sandbox_p': 'Client', 'sandbox_terere': 'Client', 'smoke_env1': 'Client', 'smoke3_env': 'Client', 'test_five_ok': 'Client', 'test_four_ok_ok_ok': 'Client', 'test_three_ok_ok': 'Client', 'test_two_ok': 'Client', 'testedeacessibilidade': 'Client', 'testing': 'Client', 'testone_ok_ok': 'Client', 'tetete': 'Client', 'zupteste': 'Client'}
