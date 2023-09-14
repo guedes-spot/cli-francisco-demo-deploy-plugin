@@ -1,0 +1,37 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: bug-global-app
+  description: testeeeeee
+  starter: new-cli-studio/new-stack@0.3.0/java-starter
+  stack-version-id: 01HAAB0NMYECD269HJ0NKXZCWV
+  stack: new-stack@0.3.0
+spec:
+  type: app
+  plugins:
+    - name: new-cli-studio/new-stack@0.3.0/app-java-spring-base@0.0.14
+      alias: app-java-spring-base
+      plugin-version-id: 01HAAAY8T118NFQ26QGNC3M7XP
+      stack-version-id: 01HAAB0NMYECD269HJ0NKXZCWV
+      type: app
+      inputs:
+        group_id: br.com.zup
+        artifact_id: paycard
+        version: 3.2.0-SNAPSHOT
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs:
+    project_name: paycard
+    project_package: br.com.zup.paycard
+    project_directory: ''
+    project_language: java
+    project_build_tool: maven
+    project_source_encoding: UTF-8
+    project_language_version: '17'
+    project_spring_boot_version: 3.2.0-SNAPSHOT
+  repository: https://github.com/guedes-spot/cli-francisco-demo-deploy-plugin
