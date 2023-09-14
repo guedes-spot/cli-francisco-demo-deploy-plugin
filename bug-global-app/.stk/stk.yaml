@@ -8,6 +8,7 @@ metadata:
   stack: new-stack@0.3.0
 spec:
   type: app
+  app-id: 01HAABM16YE4B19522HXFK9KY9
   plugins:
     - name: new-cli-studio/new-stack@0.3.0/app-java-spring-base@0.0.14
       alias: app-java-spring-base
